@@ -35,11 +35,13 @@ body {
     flex-direction: row;
     height: 100vh;
 }
+
 .left {
     display: flex;
     flex-direction: column;
     flex-basis: 66.66%;
 }
+
 .textarea-container {
     flex: 2;
     display: flex;
@@ -59,8 +61,71 @@ textarea {
     width: 30rem;
     height: 35rem;
 }
+
 textarea::placeholder {
     color: #0A3871;
     font-size: 25px;
     font-family: 'Inter', sans-serif;
+}
+
+.button-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+}
+  
+button {
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #0A3871;
+    z-index: 1;
+    background: #d6d6d6;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0A3871;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #F3F5FC;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+    color: #67808E;
+    margin: none;
+    border: none;
 }
