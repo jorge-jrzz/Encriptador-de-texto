@@ -1,6 +1,17 @@
 var vocales = ["a", "e", "i", "o", "u"];
 var cambios = ["ai", "enter", "imes", "ober", "ufat"];
 
+var mensaje_temp = document.getElementById("msjTemp");
+
+var output = document.getElementById("respuestaTexto");
+var botton_copiar = document.getElementById("copiar");
+
+let textarea = document.getElementById("ingresaTexto");
+var cadena = "";
+
+output.style.display = "none";
+botton_copiar.style.display = "none";
+
 function encriptar() {
   // Obtiene el texto de entrada para ser encriptado
   cadena = textarea.value;
