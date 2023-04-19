@@ -120,3 +120,14 @@ function copiarPortapapeles() {
   // Copiar el texto al portapapeles
   navigator.clipboard.writeText(texto);
 }
+
+// Esta funcion muestra el mensaje temporal sobre que no hay texto que encriptar o desencriptar con todos sus atributos 
+// necesarios para que esten centrados sus elemenos
+function mostrarMensaje() {
+  mensaje_temp.style.display = "block";
+  mensaje_temp.style.display = "flex";
+  mensaje_temp.style.flexDirection = "column";
+  mensaje_temp.style.alignItems = "center";
+  mensaje_temp.style.justifyContent = "center";
+}
+
