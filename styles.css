@@ -161,6 +161,12 @@ button:hover::before {
     border-radius: 32px;
 }
 
+.msjTemp {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
 .msjTemp h1 {
     color: #343A40;
     margin: 16;
