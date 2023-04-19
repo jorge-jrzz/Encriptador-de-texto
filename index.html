@@ -1,1 +1,59 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo de un enigma" width="55" height="55"> 
+            <h1>Encriptador - desencriptador de texto.</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+            <div class="textarea-container">
+                <textarea id="ingresaTexto" placeholder="Ingrese el texto aquí."></textarea>
+            </div>
+            <div class="aviso">
+                <img id="info" src="img/icon_info.png" alt="icono de iformacion" width="22" height="22">
+                <p id="restrigcion"> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="button-container">
+                <button onclick="encriptar()">Encriptar</button>
+                <button onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+		<div class="right">
+            <div class="rectangulo">
+
+                <textarea id="respuestaTexto"></textarea>
+
+                <div id="msjTemp" class="msjTemp">
+                    <!-- <img src="img/encriptado.svg" alt="Imagen de encriptado" width="220"> -->
+                    <img src="img/searching.svg" alt="Imagen de encriptado" width="220">
+                    <h2>Ningún texto encontrado</h2>
+                    <p>Ingresa el texo que deseas encriptar o desencriptar.</p>
+                </div>
+
+                <button id="copiar" onclick="copiarPortapapeles()">Copiar</button>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by <a href="https://github.com/jorge-jrzz">Jorge Juarez</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
