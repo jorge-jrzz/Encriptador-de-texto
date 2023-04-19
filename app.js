@@ -56,7 +56,7 @@ function encriptar() {
   } else {
     output.style.display = "none";
     botton_copiar.style.display = "none";
-    mensaje_temp.style.display = "block";
+    mostrarMensaje();
   }
 }
 
@@ -109,7 +109,7 @@ function desencriptar() {
   } else {
     output.style.display = "none";
     botton_copiar.style.display = "none";
-    mensaje_temp.style.display = "block";
+    mostrarMensaje();
   }
 }
 
