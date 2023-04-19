@@ -101,3 +101,11 @@ function desencriptar() {
     mensaje_temp.style.display = "block";
   }
 }
+
+function copiarPortapapeles() {
+  // Obtener el texto que se va a copiar (el texto respuesta)
+  let texto = output.value;
+
+  // Copiar el texto al portapapeles
+  navigator.clipboard.writeText(texto);
+}
